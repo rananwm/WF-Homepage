@@ -11,3 +11,156 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.not-found {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar styling */
+.nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: #282832;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.nav>.nav-header {
+  display: inline;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-button {
+  width: 143px;
+  height: 43px;
+  border-radius: 50px;
+  background-color: #00D2D2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #282832;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav>.nav-header>.nav-title {
+  display: inline-block;
+  padding-left: 130px;
+
+}
+
+.nav>.nav-btn {
+  display: none;
+}
+
+.nav>.nav-links {
+  display: flex;
+  align-items: center;
+  padding-right: 130px;
+}
+
+.nav>.nav-links>a {
+  display: inline-block;
+  padding: 0px 0px 0px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFF;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.nav>#nav-check {
+  display: none;
+}
+
+@media (max-width:1270px) {
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 60px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    margin-top: 25px;
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #282832;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 80px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    text-align: center;
+  }
+
+  .nav>.nav-links>a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  .nav>.nav-header>.nav-title {
+    padding-left: 60px;
+  }
+
+}
+
+@media (max-width:430px) {
+  .nav>.nav-header>.nav-title {
+    padding-left: 30px;
+  }
+
+  .nav>.nav-btn {
+    right: 30px;
+  }
+
+  .logo {
+    width: 240px;
+  }
+}

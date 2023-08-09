@@ -1,0 +1,202 @@
+.container {
+    width: 100%;
+    height: 80px;
+    background-color: #282832;
+    color: #fff;
+    height: 932px;
+    margin-top: 255px;
+    position: relative;
+}
+
+.topBanner {
+    position: absolute;
+    height: 180px;
+    width: 95%;
+    background-color: #282832;
+    border: 1px solid;
+    transform: translate(0%, -50%);
+    border-image: linear-gradient(to right, #FFF046 0%, #FFF046 20%, #FFEF46 40%, #FFEF46 40%, #FFEF46 60%, #FFAA50 60%, #FFAA50 80%, #B491FF 80%, #B491FF 80%, #00BEF0 100%) 1 stretch repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 60px;
+    margin-left: 2.5%;
+}
+
+.bannerText {
+    color: #F6F4F0;
+    font-family: 'DM Sans';
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button {
+    width: 214px;
+    height: 80px;
+    background-color: #00D2D2;
+    color: #282832;
+    font-family: 'DM Sans';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.headingContainer {
+    display: flex;
+    padding: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heading {
+    color: #F6F4F0;
+    text-align: center;
+    font-family: 'DM Sans';
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.rightText {
+    color: #E1D7C8;
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.mailText {
+    color: #F6F4F0;
+    font-family: 'DM Sans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.topSpace {
+    margin-top: 50px;
+}
+
+.mailContainer {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-image: radial-gradient(#7D9FFA, #00BEF0, #FFF046, #FFEF46, #FFAA50, #B491FF) 1;
+    padding-bottom: 24px;
+}
+
+.mailContainer img {
+    margin-top: 15px;
+    margin-left: 160px;
+    cursor: pointer;
+}
+
+.input {
+    color: #E1D7C8;
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 400px;
+    padding-top: 10px;
+}
+
+.bottom {
+    color: #E1D7C8;
+    font-family: 'DM Sans';
+    font-size: 18px;
+    width: 100%;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -1px 0px 0px #3E3E46;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.contentRow {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1270px) {
+    .headingContainer {
+        padding: 150px 60px 150px 60px;
+    }
+
+    .container {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .headingContainer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mailContainer img {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .topBanner {
+        height: auto;
+        padding: 40px;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .headingContainer {
+        padding: 150px 30px 150px 30px;
+    }
+
+    .input {
+        max-width: 100%;
+    }
+
+    .mailContainer img {
+        margin-left: 30px;
+    }
+
+    .bottom {
+        text-align: center;
+    }
+
+    .bannerText {
+        font-size: 25px;
+    }
+
+    .button {
+        height: 60px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+}
